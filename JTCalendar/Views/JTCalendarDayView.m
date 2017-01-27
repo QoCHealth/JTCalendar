@@ -40,7 +40,7 @@
     self.clipsToBounds = YES;
     
     _circleRatio = .9;
-    _dotRatio = 1. / 9.;
+    _dotRatio = 2. / 9.;
     
     {
         _circleView = [UIView new];
@@ -48,7 +48,7 @@
         
         _circleView.backgroundColor = [UIColor colorWithRed:0x33/256. green:0xB3/256. blue:0xEC/256. alpha:.5];
         _circleView.hidden = YES;
-
+        
         _circleView.layer.rasterizationScale = [UIScreen mainScreen].scale;
         _circleView.layer.shouldRasterize = YES;
     }
@@ -59,7 +59,7 @@
         
         _dotView.backgroundColor = [UIColor redColor];
         _dotView.hidden = YES;
-
+        
         _dotView.layer.rasterizationScale = [UIScreen mainScreen].scale;
         _dotView.layer.shouldRasterize = YES;
     }
@@ -115,14 +115,14 @@
 }
 
 - (void)reload
-{    
+{
     static NSDateFormatter *dateFormatter = nil;
     if(!dateFormatter){
         dateFormatter = [_manager.dateHelper createDateFormatter];
     }
     [dateFormatter setDateFormat:self.dayFormat];
-
-    _textLabel.text = [ dateFormatter stringFromDate:_date];       
+    
+    _textLabel.text = [ dateFormatter stringFromDate:_date];
     [_manager.delegateManager prepareDayView:self];
 }
 
