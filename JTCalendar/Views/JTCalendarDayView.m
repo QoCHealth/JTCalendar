@@ -43,6 +43,13 @@
     _dotRatio = 2. / 9.;
     
     {
+        _squareView = [UIView new];
+        [self addSubview:_squareView];
+        _squareView.backgroundColor = [UIColor colorWithRed:0x33/256. green:0xB3/256. blue:0xEC/256. alpha:.5];
+        _squareView.hidden = YES;
+        _squareView.layer.rasterizationScale = [UIScreen mainScreen].scale;
+        _squareView.layer.shouldRasterize = YES;
+
         _circleView = [UIView new];
         [self addSubview:_circleView];
         
@@ -100,8 +107,11 @@
     _circleView.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2.);
     _circleView.layer.cornerRadius = sizeCircle / 2.;
     
+    _squareView.frame = CGRectMake(0, 0, sizeCircle, sizeCircle);
+    _squareView.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2.);
+
     _dotView.frame = CGRectMake(0, 0, sizeDot, sizeDot);
-    _dotView.center = CGPointMake(self.frame.size.width / 2., (self.frame.size.height / 2.) +sizeDot * 2.5);
+    _dotView.center = CGPointMake(self.frame.size.width / 2., (self.frame.size.height / 2.) + sizeDot * 1.2);
     _dotView.layer.cornerRadius = sizeDot / 2.;
 }
 
