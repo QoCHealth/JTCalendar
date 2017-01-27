@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "QoCCalendar"
-  s.version      = "2.1.11"
+  s.version      = "2.1.12"
   s.summary      = "A customizable calendar view for iOS."
   s.homepage     = "https://github.com/QoCHealth/external-library-ios-Calendar"
   s.license      = { :type => 'MIT' }
