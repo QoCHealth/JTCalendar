@@ -1,14 +1,16 @@
 PODS:
-  - JTCalendar (2.1.9)
+  - QoCCalendar (2.1.11)
 
 DEPENDENCIES:
-  - JTCalendar (from `..`)
+  - QoCCalendar (from `/Users/kenneth.yip/development/ios/external-library-ios-Calendar/`)
 
 EXTERNAL SOURCES:
-  JTCalendar:
-    :path: ..
+  QoCCalendar:
+    :path: "/Users/kenneth.yip/development/ios/external-library-ios-Calendar/"
 
 SPEC CHECKSUMS:
-  JTCalendar: beb2f4c1b639bf6880f680b4858227acf83a049c
+  QoCCalendar: 91066a27a87265e8803b830fb33ccb26f005e377
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 001252c93b04c48592bf28028357fdabab00e7a9
+
+COCOAPODS: 1.1.1

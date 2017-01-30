@@ -1,0 +1,24 @@
+{
+  "name": "QoCCalendar",
+  "version": "2.1.11",
+  "summary": "A customizable calendar view for iOS.",
+  "homepage": "https://github.com/QoCHealth/external-library-ios-Calendar",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "Jonathan Tribouharet": "jonathan.tribouharet@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/QoCHealth/external-library-ios-Calendar.git",
+    "tag": "2.1.11"
+  },
+  "source_files": "JTCalendar/**/*",
+  "requires_arc": true,
+  "screenshots": [
+    "https://raw.githubusercontent.com/QoCHealth/external-library-ios-Calendar/master/Screens/example.gif"
+  ]
+}

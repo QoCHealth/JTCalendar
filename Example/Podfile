@@ -1,5 +1,8 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/QoCHealth/external-library-ios-cocoapods-podspecs.git'
 
-platform :ios, '7.0'
+target 'Example' do
+   platform :ios, '7.0'
 
-pod 'JTCalendar', path: '..'
+   pod 'QoCCalendar', :path=> '/Users/kenneth.yip/development/ios/external-library-ios-Calendar/'
+
+end
